@@ -21,7 +21,7 @@ export default{
             this.$router.push("/participants", id);
         },
         testFoo(){
-            fetch("https://2d",{
+            fetch("https://2d13ac092947-hirelamp-bbcf628a86ebae0f2646300d98508d5.co/contactForm/",{
                 headers: {
                     "Content-Type": "application/json",
                     "Accept": "application/json"
