@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import WelcomePage from '../pages/WelcomePage.vue'
-// import ExplanationPage from '../pages/ExplanationPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,11 +18,6 @@ const router = createRouter({
       path:'/clue',
       name: 'clue',
       component: () => import('../pages/CluePage.vue')
-    },
-    {
-      path:'/qr',
-      name: 'qr',
-      component: () => import('../pages/TestQR.vue')
     },
     {
       path:'/participants',
