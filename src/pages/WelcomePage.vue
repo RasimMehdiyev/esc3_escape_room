@@ -31,7 +31,7 @@ export default{
                     "fullName": "Rasim Mehdiyev",
                     "email": "rasim@hirelamp.co",
                     "talksAbout":"something",
-                    "phoneNumber":994504410451,
+                    "mobilePhone":994504410451,
                     "mentorFullName":"Orkhan Abbasov",
                     "bookingDate":"2009-06-15T13:45:30",
                     })
