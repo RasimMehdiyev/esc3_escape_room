@@ -33,7 +33,7 @@ export default{
                     "talksAbout":"something",
                     "phoneNumber":994504410451,
                     "mentorFullName":"Orkhan Abbasov",
-                    "bookingDate":"20210517T12:00:00",
+                    "bookingDate":"2009-06-15T13:45:30",
                     })
             })
         }
