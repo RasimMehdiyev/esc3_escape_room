@@ -13,11 +13,29 @@ export default{
         };
     },
     mounted() {
-        // 
+        //  method: "POST",
+
     },
     methods:{
         toParticipants(id){
             this.$router.push("/participants", id);
+        },
+        testFoo(){
+            fetch("https://2d",{
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                method: "POST",
+                body: JSON.stringify({
+                    "fullName": "Rasim Mehdiyev",
+                    "email": "rasim@hirelamp.co",
+                    "talksAbout":"something",
+                    "phoneNumber":994504410451,
+                    "mentorFullName":"Orkhan Abbasov",
+                    "bookingDate":"20210517T12:00:00",
+                    })
+            })
         }
     }
 }
@@ -29,7 +47,7 @@ export default{
     <NavBar/>
 
         <div class="qr-code-box">
-            <span>SCAN QR CODE</span>
+            <span @click="testFoo()">SCAN QR CODE</span>
             <div>
             </div>
             <button @click="toParticipants(id)" style="font-size: 17px; border-radius: 6px ;border-style: none; background-color: #EDD33A; margin-left: 84px;height:40px; width: 140px; margin-top:340px;">SUBMIT</button>
