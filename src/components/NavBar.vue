@@ -5,7 +5,7 @@
         <ul>
             <li class="navbar_title"> 
                 <span @click="toExplanation" class="nav-title">Crazy Rick</span> 
-                <span @click="toLeaderBoard"><img class="leaderboard-icon" src="../assets/img/3149864 1.png" alt=""></span>
+                <span @click="toLeaderBoard"><img class="leaderboard-icon" src="../assets/img/31498641.png" alt=""></span>
                 <br style="margin-bottom: 10px!important;"> 
                 <span class="navbar_clickable" @click="toggleNavBar()" v-if="(this.navBarFlag == false)" style="color:aqua; font-size: 10px;">Show more</span> 
                 <span class="navbar_clickable" @click="toggleNavBar()" v-if="(this.navBarFlag == true)" style="color:aqua; font-size: 10px;">Show less</span>

@@ -13,6 +13,7 @@ export default{
     data() {
         return {
             timeRemaining: "",
+            endHour: 15
         };
     },
     beforeMount() {
@@ -21,7 +22,9 @@ export default{
     methods: {
         getRemainingTime(){
             let curTime = new Date();
-            let endTime = new Date(2022, 11, 8, 15, 23, 0);
+            // let endHour = 15; 
+            // console.log(this.endHour)
+            let endTime = new Date(2022, 11, 8, this.endHour, 23, 0);
             let difference = endTime - curTime
             var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((difference % (1000 * 60)) / 1000);
@@ -32,6 +35,14 @@ export default{
             if (seconds < 10){
                 seconds = "0"+seconds
             }
+
+            if (difference < 0){
+                minutes = "00"
+                seconds = "00"
+                this.endHour++;
+                endTime = new Date(2022, 11, 8, this.endHour, 23, 0);
+            }
+
             this.timeRemaining = minutes + ":" + seconds
         }
     },
